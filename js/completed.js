@@ -93,6 +93,11 @@ document.getElementById('btn-completed-1').addEventListener('click',function(eve
     container.appendChild(p);
     activityLog.appendChild(container);
     document.getElementById('btn-completed-5').disabled = true;
+    const btn = document.getElementById('btn-06').innerText;
+    const convertedBtn = parseInt(btn)
+    if(convertedBtn===0){
+    alert("congrats!  successfully complete the all task.");
+    }
   })
   
   // completed btn 6
